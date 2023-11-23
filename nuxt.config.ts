@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  ssr: false,
   modules: ['@nuxt/content', '@nuxtjs/google-fonts'],
   content: {
     // ... options
@@ -7,7 +8,6 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Roboto: true,
-      'Noto Sans': true,
       'Noto Sans Thai': true,
     },
   },
