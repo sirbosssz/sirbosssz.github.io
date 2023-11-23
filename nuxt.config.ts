@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   ssr: false,
   modules: [
     '@nuxt/content',
+    'nuxt-typed-router',
     '@nuxtjs/google-fonts',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
