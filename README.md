@@ -1,75 +1,23 @@
-# Nuxt 3 Minimal Starter
+# Pattadon Baongern's
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<p align="center">
+  <img width="120px" src="portfolio_image/profile_black.jpg" />
+</p>
 
-## Setup
+`💻 Software Engineer` | `💼 Product Manager` | `🎮 Game Producer/Developer`
 
-Make sure to install the dependencies:
+---
 
-```bash
-# npm
-npm install
+## Links
 
-# pnpm
-pnpm install
+### [📒 Portfolio (Notion)](https://pattadonb.notion.site/338e62d9e6df41cd825ce7da808a0531?v=91d01a699d4a48268602da72de4b1314&pvs=74)
 
-# yarn
-yarn install
+> [https://pattadonb.notion.site/338e62d9e6df41cd825ce7da808a0531?v=91d01a699d4a48268602da72de4b1314&amp;pvs=74](https://pattadonb.notion.site/338e62d9e6df41cd825ce7da808a0531?v=91d01a699d4a48268602da72de4b1314&pvs=74)
 
-# bun
-bun install
-```
+### 👥 [LinkedIn](https://www.linkedin.com/in/pattadonb/)
 
-## Development Server
+> [https://www.linkedin.com/in/pattadonb/](https://www.linkedin.com/in/pattadonb/)
 
-Start the development server on `http://localhost:3000`:
+### [💻 GitHub](https://github.com/sirbosssz)
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+> [https://github.com/sirbosssz](https://github.com/sirbosssz)
