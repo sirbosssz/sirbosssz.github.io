@@ -2,7 +2,7 @@
   <img width="120px" src="portfolio_image/profile_black.jpg" />
 </p>
 
-`💻 Software Engineer` | `💼 Product Manager` | `🎮 Game Producer/Developer`
+`💻 Software Engineer` | `💼 Project/Product Manager` | `🎮 Game Developer`
 
 ---
 
