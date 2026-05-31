@@ -1,0 +1,3 @@
+# Tool-specific skill symlinks (created by scripts/install-agent-tooling.sh)
+.cursor/skills
+.claude/skills

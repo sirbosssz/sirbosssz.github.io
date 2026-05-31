@@ -1,0 +1,16 @@
+---
+description: Vanilla CSS layout and design token conventions
+globs: "**/*.css"
+alwaysApply: false
+---
+
+# CSS standards
+
+- Mobile-first base styles; enhance with `min-width` media queries
+- Design tokens in `:root` custom properties
+- Fluid type: `clamp(min, preferred, max)` with `rem` in preferred
+- Intrinsic grid: `repeat(auto-fit, minmax(min(300px, 100%), 1fr))`
+- Container queries when component context matters
+- Support `prefers-color-scheme` and `prefers-reduced-motion`
+- Relative units for spacing/type; plain CSS only — no preprocessors
+- No inline styles in HTML

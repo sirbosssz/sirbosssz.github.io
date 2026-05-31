@@ -1,0 +1,16 @@
+---
+description: Vanilla JavaScript progressive enhancement patterns
+globs: "**/*.js"
+alwaysApply: false
+---
+
+# JavaScript standards
+
+- HTML/CSS must work without JS
+- IIFE or deferred scripts; no global pollution
+- Feature detection, not UA sniffing
+- Event delegation on stable parents
+- Prefer `textContent`, `classList`, `dataset` over `innerHTML`
+- Fail silently — guard with early returns
+- No frameworks; scripts in `assets/js/`
+- Update ARIA state when toggling UI (e.g. `aria-expanded`)

@@ -1,0 +1,16 @@
+---
+description: GitHub Pages deployment constraints
+globs: ".github/**,index.html,404.html"
+alwaysApply: false
+---
+
+# GitHub Pages
+
+- User site: artifact is repo root (`.`)
+- `index.html` required at root; `.nojekyll` disables Jekyll
+- Workflow: validate HTML → upload-pages-artifact → deploy-pages@v4
+- Deploy job needs `pages: write` + `id-token: write`
+- `concurrency: cancel-in-progress: false`
+- Push to `main` triggers deploy — never force-push
+- One-time: Settings → Pages → GitHub Actions source
+- Verify: `gh run list --workflow pages.yml`

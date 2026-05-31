@@ -1,0 +1,16 @@
+---
+description: Core project standards — stack, deploy, handoff, read AGENTS.md first
+alwaysApply: true
+---
+
+# Project core
+
+- Read [AGENTS.md](../../AGENTS.md) before making changes
+- Vanilla HTML/CSS/JS only — no npm, no frameworks
+- Site at repo root; README is profile-only, not the live site
+- Preview: `python3 -m http.server 8080`
+- Deploy: push to `main` → GitHub Actions → https://sirbosssz.github.io
+- Never force-push `main`
+- Checkpoint handoff after each completed task (`~/.handoff/<repo-slug>/`)
+- Stable facts → [docs/CONTEXT.md](../../docs/CONTEXT.md)
+- Skills in `.agents/skills/`

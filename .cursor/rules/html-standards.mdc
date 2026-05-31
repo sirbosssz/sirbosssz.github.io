@@ -1,0 +1,18 @@
+---
+description: HTML semantics, accessibility, and SEO standards
+globs: "**/*.html"
+alwaysApply: false
+---
+
+# HTML standards
+
+- One `<h1>` per page; no skipped heading levels
+- Use `<header>`, `<nav>`, `<main>`, `<footer>`, `<section>` — not div soup
+- One `<main>` per page
+- ARIA only when native HTML is insufficient
+- Every `<img>` has `alt`; decorative = `alt=""`
+- Set `width` and `height` on images
+- `lang="en"` on `<html>`
+- Include meta description + Open Graph on index pages
+- Skip link to `#main`; `:focus-visible` on interactive elements
+- Validate: `npx html-validate "**/*.html"`
