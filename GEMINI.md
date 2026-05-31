@@ -32,8 +32,12 @@ Future option (not yet built): game-inventory / character-sheet UI aesthetic —
 
 Antigravity slash commands in `.agents/workflows/`:
 
-- `/deploy` — validate and deploy guidance
+- `/deploy` — validate and deploy guidance (**only when user asks to deploy**)
 - `/resume-handoff` — continue from handoff state
 - `/preview` — local preview checklist
 
 Skills: `.agents/skills/` (canonical)
+
+## Git and deploy
+
+Do not commit or push unless the user explicitly asks. See [AGENTS.md](AGENTS.md) for the full policy.

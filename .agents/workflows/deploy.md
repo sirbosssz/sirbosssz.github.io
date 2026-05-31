@@ -1,6 +1,8 @@
 # Deploy to GitHub Pages
 
-When the user invokes `/deploy`, follow this workflow using `.agents/skills/` and [AGENTS.md](../../AGENTS.md).
+When the user invokes `/deploy` **or explicitly asks to deploy/publish/push**, follow this workflow using `.agents/skills/` and [AGENTS.md](../../AGENTS.md).
+
+**If the user did not ask to deploy, do not commit or push.** Offer to deploy only after they confirm.
 
 ## Steps
 

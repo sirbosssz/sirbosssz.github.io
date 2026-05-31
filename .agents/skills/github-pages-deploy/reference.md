@@ -19,6 +19,7 @@ Sources: [llmbestpractices GitHub Pages](https://llmbestpractices.com/ops/github
 | `404.html` for unmatched paths | Pages serves automatically |
 | Enable Pages before first push | Creates github-pages environment |
 | Verify with `gh run list` | Safe agent loop |
+| No commit/push without user request | Agent policy + Cursor git-guard hook |
 | CNAME must match Settings exactly | Custom domain only |
 
 ## Permissions block

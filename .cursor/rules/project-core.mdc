@@ -9,7 +9,9 @@ alwaysApply: true
 - Vanilla HTML/CSS/JS only — no npm, no frameworks
 - Site at repo root; README is profile-only, not the live site
 - Preview: `python3 -m http.server 8080`
-- Deploy: push to `main` → GitHub Actions → https://sirbosssz.github.io
+- **Do not `git commit` unless the user explicitly asks**
+- **Do not `git push` or deploy unless the user explicitly asks** (deploy = push to `main` → GitHub Actions)
+- If unclear, ask before committing or pushing
 - Never force-push `main`
 - Checkpoint handoff after each completed task (`~/.handoff/<repo-slug>/`)
 - Stable facts → [docs/CONTEXT.md](../../docs/CONTEXT.md)

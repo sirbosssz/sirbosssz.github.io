@@ -35,12 +35,30 @@ Canonical instructions for AI agents working in this repository (Cursor, Claude 
 
 ## Deploy workflow
 
-1. Commit and push to `main`
+Deploy happens automatically **only after** changes are pushed to `main` (via GitHub Actions).
+
+**Agents must not deploy unless the user explicitly asks** (e.g. "commit and push", "deploy", "publish to GitHub Pages").
+
+When the user does ask to deploy:
+
+1. Commit and push to `main` (only if user also asked to commit, or deploy implies both)
 2. GitHub Actions (`.github/workflows/pages.yml`) validates HTML and deploys via `deploy-pages@v4`
 3. Verify: `gh run list --workflow pages.yml` and check `https://sirbosssz.github.io`
 4. **One-time setup:** GitHub repo **Settings → Pages → Build and deployment → GitHub Actions**
 
 **Never** force-push `main`. Do not commit secrets (`.env`, tokens, credentials).
+
+## Git and deploy policy (mandatory)
+
+| Action | Rule |
+|--------|------|
+| `git commit` | **Do not run** unless the user explicitly asks you to commit |
+| `git push` | **Do not run** unless the user explicitly asks you to push or deploy |
+| Deploy (push → Actions → live site) | **Do not trigger** unless the user explicitly asks to deploy or publish |
+| `git add` / staging | OK when preparing work, but stop before commit unless asked |
+| Local preview / validate | OK without asking — `python3 -m http.server`, `html-validate` |
+
+If unclear whether the user wants a commit or deploy, **ask first**. Finishing edits is not permission to commit or push.
 
 ## Multi-tool setup
 
@@ -79,6 +97,8 @@ Reading order on resume: `HANDOFF.md` → this file → `docs/CONTEXT.md` → co
 
 ## Safety
 
+- **No commit unless asked** — do not run `git commit` unless the user explicitly requests it
+- **No push/deploy unless asked** — do not run `git push` or trigger GitHub Pages deploy unless the user explicitly requests deploy/publish/push
 - Ask before destructive git operations (`reset --hard`, force push)
 - Do not commit handoff state or secrets
 - Keep changes focused — match existing vanilla patterns

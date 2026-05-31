@@ -11,6 +11,7 @@ alwaysApply: false
 - Workflow: validate HTML → upload-pages-artifact → deploy-pages@v4
 - Deploy job needs `pages: write` + `id-token: write`
 - `concurrency: cancel-in-progress: false`
-- Push to `main` triggers deploy — never force-push
+- Push to `main` triggers deploy — **only when user explicitly asks to push/deploy**
+- Do not commit or push unless the user asks
 - One-time: Settings → Pages → GitHub Actions source
 - Verify: `gh run list --workflow pages.yml`

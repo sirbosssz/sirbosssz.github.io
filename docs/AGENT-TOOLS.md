@@ -61,6 +61,16 @@ Find your handoff slug:
 2. **On resume:** read all files in `~/.handoff/<repo-slug>/`, print ≤15-line snapshot, ask confirmation
 3. **Stable facts:** promote to `docs/CONTEXT.md`
 
+## Git and deploy policy
+
+| Action | Agent rule |
+|--------|------------|
+| `git commit` | Only when user explicitly asks |
+| `git push` / deploy | Only when user explicitly asks to push, deploy, or publish |
+| Local preview / validate | OK without asking |
+
+Cursor enforces this via `.cursor/hooks/git-guard.sh` (asks before commit/push).
+
 ## Verification checklist
 
 - [ ] `./scripts/install-agent-tooling.sh` succeeds

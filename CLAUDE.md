@@ -8,6 +8,13 @@ Read [AGENTS.md](AGENTS.md) for full project context, deploy workflow, handoff p
 - Resume work: `/handoff` — read `~/.handoff/<repo-slug>/`, print snapshot, **confirm with user**, then continue
 - Handoff hooks: installed in user `~/.claude/settings.json` via handoff skill
 
+## Git and deploy policy
+
+- **Do not run `git commit`** unless the user explicitly asks you to commit
+- **Do not run `git push` or deploy** unless the user explicitly asks to push, deploy, or publish
+- Local preview and validation are fine without asking
+- When in doubt, ask before committing or pushing
+
 ## Conventions (mirror of Cursor rules)
 
 ### HTML
@@ -34,7 +41,9 @@ Read [AGENTS.md](AGENTS.md) for full project context, deploy workflow, handoff p
 
 ### GitHub Pages
 
-- Push to `main` triggers deploy; never force-push
+- Push to `main` triggers deploy — **only when the user explicitly asks to push/deploy**
+- Never commit or push proactively after making edits
+- Never force-push
 - Site root is the artifact — `index.html` must exist at repo root
 - `.nojekyll` disables Jekyll
 

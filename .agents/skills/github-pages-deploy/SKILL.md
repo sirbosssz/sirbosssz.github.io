@@ -6,6 +6,12 @@ disable-model-invocation: true
 
 # GitHub Pages Deploy
 
+## Permission gate
+
+**Do not commit, push, or deploy unless the user explicitly asks.**
+
+Only run this skill's deploy steps when the user requests deploy, publish, push to main, or commit and deploy. If they only asked for code changes, stop after edits and local validation.
+
 ## Pre-deploy checklist
 
 - [ ] `index.html` exists at repo root
@@ -31,6 +37,7 @@ disable-model-invocation: true
 
 ## Safety
 
+- **No commit/push/deploy without explicit user request**
 - Never `git push --force` to `main`
 - User site (`sirbosssz.github.io`) — no `/repo/` base path needed
 - Artifact path is `.` (repo root)
